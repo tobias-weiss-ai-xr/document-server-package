@@ -10,7 +10,6 @@ Architecture: M4_DEB_ARCH
 Depends: ${shlibs:Depends}, ${misc:Depends}, 
   adduser,
   ca-certificates,
-  certbot,
   coreutils,
   curl,
   libasound2 | libasound2t64,
@@ -33,6 +32,6 @@ ifelse(eval(ifelse(M4_PRODUCT_NAME,documentserver-ee,1,0)||ifelse(M4_PRODUCT_NAM
   openssl,
   xxd,
   zlib1g
-Recommends:
+Recommends: certbot
 Description: defn(`DEB[Summary]')
 defn(`DEB[Description]')
